@@ -1,0 +1,92 @@
+[
+    { 
+      "name": "Loja", 
+      "to": "/", 
+      "dropdowns": [
+        "test1",
+        "test2",
+        "test3"
+      ] 
+    },
+    { 
+      "name": "Mac", 
+      "to": "/", 
+      "dropdowns": [
+        "test1",
+        "test2",
+        "test3"
+      ] 
+    },
+    { 
+      "name": "iPad", 
+      "to": "/", 
+      "dropdowns": [
+        "test1",
+        "test2",
+        "test3"
+      ] 
+    },
+    { 
+      "name": "iPhone", 
+      "to": "/", 
+      "dropdowns": [
+        "test1",
+        "test2",
+        "test3"
+      ] 
+    },
+    { 
+      "name": "Watch", 
+      "to": "/", 
+      "dropdowns": [
+        "test1",
+        "test2",
+        "test3"
+      ] 
+    },
+    { 
+      "name": "AirPods", 
+      "to": "/", 
+      "dropdowns": [
+        "test1",
+        "test2",
+        "test3"
+      ] 
+    },
+    { 
+      "name": "TV e Casa", 
+      "to": "/", 
+      "dropdowns": [
+        "test1",
+        "test2",
+        "test3"
+      ] 
+    },
+    { 
+      "name": "Entretenimento", 
+      "to": "/", 
+      "dropdowns": [
+        "test1",
+        "test2",
+        "test3"
+      ] 
+    },
+    { 
+      "name": "Acessórios", 
+      "to": "/", 
+      "dropdowns": [
+        "test1",
+        "test2",
+        "test3"
+      ] 
+    },
+    { 
+      "name": "Suporte", 
+      "to": "/", 
+      "dropdowns": [
+        "test1",
+        "test2",
+        "test3"
+      ] 
+    }
+  ]
