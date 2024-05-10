@@ -15,7 +15,12 @@
   "dependencies": {
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "@vueuse/motion": "^2.1.0",
+    "lucide-vue-next": "^0.376.0",
+    "normalize.css": "^8.0.1",
+    "vanilla-tilt": "^1.8.1",
+    "vueperslides": "^3.5.1"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",
