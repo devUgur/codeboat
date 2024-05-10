@@ -1,39 +1,30 @@
 <template>
-  <div class="grid md:grid-cols-2 md:w-[100%] w-full grid-cols-1 w[50%] mx-auto text-white">
-    <div class="">
-      <h1
-        class="font-bold text-2xl"
-        :class="{ 'float-end': position === 'right', 'text-center': position === 'center' }"
-      >
-        {{ sectionItem.title }}
-      </h1>
-    </div>
-    <ABaseImgModal class="w-full h-fit my-auto" />
-  </div>
-  <div class="user-box md:w-[50%] md:mx-auto p-6">
-    <p v-for="content in sectionItem.content" class="text-slate-400" :key="content">
-      {{ content }}
-    </p>
-  </div>
-  <button v-if="button" href="#" class="bg-white px-4 py-2 rounded float-right mx-6">
-    {{ sectionItem.button }}
-  </button>
+   <div className="h-11 flex items-center justify-between lg:justify-center z-50 fixed bg-white w-full bg-opacity-90 backdrop-blur-sm">
+        <div className="mr-6 text-xl">
+          <Logo width={44} height={20} />
+        </div>
+        <div className="hidden lg:flex space-x-10 text-xs text-black">
+          <div className="">Loja</div>
+          <div className="">Mac</div>
+          <div className="">iPad</div>
+          <div className="">iPhone</div>
+          <div className="">Watch</div>
+          <div className="">AirPods</div>
+          <div className="">TV e Casa</div>
+          <div className="">Entretenimento</div>
+          <div className="">Acessórios</div>
+          <div className="">Suporte</div>
+        </div>
+        <div className="ml-6 flex space-x-0 lg:space-x-2">
+          <div className='flex lg:hidden'>
+          </div>
+        </div>
+      </div>
+
 </template>
 
 <script setup lang="ts">
-import ABaseImgModal from '../img/ABaseImgModal.vue'
 
-interface Section {
-  title: string
-  content: string[]
-  button: string
-}
-export interface BaseSection {
-  button?: boolean
-  position: string
-  sectionItem: Section
-}
-defineProps<BaseSection>()
 </script>
 
 <style lang="scss" scoped></style>
