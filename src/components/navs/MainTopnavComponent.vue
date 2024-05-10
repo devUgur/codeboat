@@ -16,7 +16,7 @@ const handleDropdown = function(dropdown: any){
 
 
 <template>
-  <div class="fixed top-0 h-screen w-full bg-opacity-90 backdrop-blur-sm" @mouseleave="dropdownIsOpen = false">
+  <div class="fixed top-0  w-full bg-opacity-90" :class="{'full-open':dropdownIsOpen}" @mouseleave="dropdownIsOpen = false">
     <div class="flex h-24 place-items-center items-center justify-between lg:justify-center">
       <div class="mr-6 text-xl"> Logo </div>
          <div class="hidden lg:flex space-x-10 text-xs text-black">
@@ -28,11 +28,11 @@ const handleDropdown = function(dropdown: any){
            </div>
          </div>
     </div>
-    <div class="bg-slate-500" :class="{'full-open': dropdownIsOpen}">
+    <div class="" :class="{'full-open': dropdownIsOpen}">
       <div id="dropdown" :class="{'open': dropdownIsOpen}" class="bg-red-200">
       {{ dropdownContent }}
     </div>
-    <div v-if="dropdownIsOpen" class="h-full bg-red-500"  @mouseenter="dropdownIsOpen = false"></div>
+    <div v-if="dropdownIsOpen" class="h-full backdrop-blur-sm"  @mouseenter="dropdownIsOpen = false"></div>
   </div>
 </div>
 </template>
