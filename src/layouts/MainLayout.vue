@@ -6,7 +6,7 @@ import MainTopnavComponent from "@/components/navs/MainTopnavComponent.vue";
 
 <template>
     <div id="main-layout">
-        <MainTopnavComponent></MainTopnavComponent>
+        <!-- <MainTopnavComponent></MainTopnavComponent> -->
         <RouterView></RouterView>
     </div>
 </template>
