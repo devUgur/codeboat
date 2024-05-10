@@ -5,8 +5,8 @@ defineProps(['fullName', 'title', 'imgSrc'])
 <template>
   <div class="container">
     <div class="card">
-      <div class="imgBx">
-      <img :src="imgSrc" alt="contactPic" />
+      <div class="w-full h-full">
+      <img :src="imgSrc" class="w-full h-full" alt="contactPic" />
       </div>
       <div class="content">
         <div class="contentBx">
@@ -37,13 +37,11 @@ defineProps(['fullName', 'title', 'imgSrc'])
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 40px 0;
 }
 .container .card {
   position: relative;
   width: 200px;
   height: 300px;
-  margin: 20px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
@@ -79,7 +77,7 @@ defineProps(['fullName', 'title', 'imgSrc'])
   font-size: 12px;
   line-height: 1.1em;
   text-align: center;
-  margin: 5px 0 15px;
+  /* margin: 5px 0 15px; */
   transition: 0.5s;
   opacity: 0;
   transform: translateY(-20px);
