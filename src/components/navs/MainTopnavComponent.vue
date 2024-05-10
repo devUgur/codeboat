@@ -29,10 +29,10 @@ const handleDropdown = function(dropdown: any){
          </div>
     </div>
     <div class="bg-slate-500" :class="{'full-open': dropdownIsOpen}">
-      <div id="dropdown" :class="{'open': dropdownIsOpen}" @mouseleave="dropdownIsOpen = false" class="bg-red-200">
+      <div id="dropdown" :class="{'open': dropdownIsOpen}" class="bg-red-200">
       {{ dropdownContent }}
     </div>
-    <div v-if="dropdownIsOpen" class="h-full bg-red-500"></div>
+    <div v-if="dropdownIsOpen" class="h-full bg-red-500"  @mouseenter="dropdownIsOpen = false"></div>
   </div>
 </div>
 </template>
