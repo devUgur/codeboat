@@ -16,7 +16,7 @@ const handleDropdown = function(dropdown: any){
 
 
 <template>
-  <div class="fixed top-0 h-screen w-full bg-opacity-90 backdrop-blur-sm">
+  <div class="fixed top-0 h-screen w-full bg-opacity-90 backdrop-blur-sm" @mouseleave="dropdownIsOpen = false">
     <div class="flex h-24 place-items-center items-center justify-between lg:justify-center">
       <div class="mr-6 text-xl"> Logo </div>
          <div class="hidden lg:flex space-x-10 text-xs text-black">
